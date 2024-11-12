@@ -1,0 +1,36 @@
+.controls {
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-gap: 5px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cell.blue {
+  background-color: blue;
+}
+
+.cell.yellow {
+  background-color: yellow;
+}
+
+.cell.green {
+  background-color: green;
+}
+
+.cell.red {
+  background-color: red;
+}

@@ -1,0 +1,21 @@
+<div class="controls">
+  <input type="number" [(ngModel)]="timeLimit" placeholder="Введіть час (мс)" />
+  <button (click)="start()">Почати</button>
+</div>
+
+<div class="score">
+  <span>Гравець: {{ playerScore }}</span> |
+  <span>Комп'ютер: {{ computerScore }}</span>
+</div>
+
+<div class="game-board">
+  <div
+    *ngFor="let cell of cells; let i = index"
+    [class.blue]="cell === colors.blue"
+    [class.yellow]="cell === colors.yellow"
+    [class.green]="cell === colors.green"
+    [class.red]="cell === colors.red"
+    (click)="onCellClick(i)"
+    class="cell"
+  ></div>
+</div>
